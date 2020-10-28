@@ -16,12 +16,19 @@
             <a href="./index.html" class="logo"><img src="image/logo.svg" alt="Logo"></a>
             <input type="text" class="input addres-input" placeholder="Адрес доставки">
             <div class="buttons">
-                <button class="button button-primary"> 
-                    <img src="image/user.svg" alt="User" class="button-user"> <span class="text-user">Войти</span>
+                <span class="user-name"></span>
+                <button class="button button-primary button-auth"> 
+                    <img src="image/user.svg" alt="User" class="button-user"> 
+                    <span class="text-user">Войти</span>
                 </button>
-                <button class="button" id="open-card"> 
-                    <img src="image/shopping-cart.svg" alt="Shopping cart" class="button-cart"> <span class="text-cart">Корзина</span> 
+                <button class="button button-cart" id="open-card"> 
+                    <img src="image/shopping-cart.svg" alt="Shopping cart" class="button-cart"> 
+                    <span class="text-cart">Корзина</span> 
                 </button>
+                <button class="button button-primary button-out">
+					<span class="text-user">Выйти</span>
+					<span class="button-out-svg"></span>
+				</button>
             </div>
         </header>
     </div>
@@ -143,7 +150,34 @@
             </div>
         </div>
     </footer>
+    <!-- модальное окно авторизации -->
+    <div class="modal-auth">
+		<div class="modal-dialog modal-dialog-auth">
+			<button class="close-auth">&times;</button>
+			<form id="logInForm">
+				<fieldset class="modal-body">
+					<legend class="modal-title">Авторизация</legend>
+					<label class="label-auth">
+						<span>Логин</span>
+						<input id="login" type="text">
+					</label>
+					<label class="label-auth">
+						<span>Пароль</span>
+						<input id="password" type="password">
+					</label>
+				</fieldset>
+				<!-- /.modal-body -->
+				<div class="modal-footer">
+					<div class="footer-buttons">
+						<button class="button button-primary button-login" type="submit">Войти</button>
+					</div>
+				</div>
+			</form>
+			<!-- /.modal-footer -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
 
-    <!-- <script src="js/main.js"></script> -->
+    <script src="js/main.js" async></script>
 </body>
 </html>
