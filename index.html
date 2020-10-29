@@ -33,10 +33,12 @@
         </header>
     </div>
     <main class="main">
-        <div class="container">
-            <section class="promo">
-                <h1 class="promo-title">Онлайн-сервис <br> доставки еды на дом</h1>
-                <p class="promo-text">Блюда из любимого ресторана привезет курьер в перчатках, маске и с антисептиком</p>
+        <div class="container container-promo">
+            <section class="container-promo">
+                <section class="promo">
+                    <h1 class="promo-title">Онлайн-сервис <br> доставки еды на дом</h1>
+                    <p class="promo-text">Блюда из любимого ресторана привезет курьер в перчатках, маске и с антисептиком</p>
+                </section>
             </section>
             <section class="restaurants">
                 <div class="section-heading">
@@ -44,94 +46,28 @@
                     <input type="text" class="input-search" placeholder="Поиск блюд и ресторанов">
                 </div>
             </section>
+            <!-- блок для генерации карточек ресторанов -->
             <section class="cards">
-                <div class="card">
-                    <img src="image/pizza-plus.svg" alt="pizza-plus" class="card-image">
-                    <div class="card-text">
-                        <div class="card-heading">
-                            <h3 class="card-title">Пицца плюс</h3>
-                            <span class="card-tag tag">10 мин</span>
-                        </div>
-                        <div class="card-info">
-                            <div class="rating"><img src="image/star.svg" alt="Star" class="rating-star"> 4.5</div>
-                            <div class="price">от 900 ₽</div>
-                            <div class="category">Пицца</div>
-                        </div>
-                    </div>
-                </div>
-                <a href="./restaurant.html" class="card">
-                    <img src="image/tanyki.svg" alt="pizza-plus" class="card-image">
-                    <div class="card-text">
-                        <div class="card-heading">
-                            <h3 class="card-title">Тануки</h3>
-                            <span class="card-tag tag">50 мин</span>
-                        </div>
-                        <div class="card-info">
-                            <div class="rating"><img src="image/star.svg" alt="Star" class="rating-star"> 4.5</div>
-                            <div class="price">от 1500 ₽</div>
-                            <div class="category">Тануки</div>
-                        </div>
-                    </div>
-                </a>
-                <div class="card">
-                    <img src="image/foodband.svg" alt="pizza-plus" class="card-image">
-                    <div class="card-text">
-                        <div class="card-heading">
-                            <h3 class="card-title">Food Band</h3>
-                            <span class="card-tag tag">90 мин</span>
-                        </div>
-                        <div class="card-info">
-                            <div class="rating"><img src="image/star.svg" alt="Star" class="rating-star"> 4.5</div>
-                            <div class="price">от 2900 ₽</div>
-                            <div class="category">Пицца</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="image/susi.svg" alt="pizza-plus" class="card-image">
-                    <div class="card-text">
-                        <div class="card-heading">
-                            <h3 class="card-title">Суши сет</h3>
-                            <span class="card-tag tag">60 мин</span>
-                        </div>
-                        <div class="card-info">
-                            <div class="rating"><img src="image/star.svg" alt="Star" class="rating-star"> 4.5</div>
-                            <div class="price">от 100 ₽</div>
-                            <div class="category">Суши</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="image/poin-food.svg" alt="pizza-plus" class="card-image">
-                    <div class="card-text">
-                        <div class="card-heading">
-                            <h3 class="card-title">Точка еды</h3>
-                            <span class="card-tag tag">90 мин</span>
-                        </div>
-                        <div class="card-info">
-                            <div class="rating"><img src="image/star.svg" alt="Star" class="rating-star"> 4.5</div>
-                            <div class="price">от 2000 ₽</div>
-                            <div class="category">Набор</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="image/pizzaburger.svg" alt="pizza-plus" class="card-image">
-                    <div class="card-text">
-                        <div class="card-heading">
-                            <h3 class="card-title">Pizza Burger</h3>
-                            <span class="card-tag tag">50 мин</span>
-                        </div>
-                        <div class="card-info">
-                            <div class="rating"><img src="image/star.svg" alt="Star" class="rating-star"> 4.5</div>
-                            <div class="price">от 900 ₽</div>
-                            <div class="category">Пицца</div>
-                        </div>
-                    </div>
-                </div>
+                
             </section>
         </div>
     </main>
+    <!-- Карточки с едой в ресторане-->
+    <div class="container menu hide">
+        <section class="restaurants">
+            <div class="section-heading">
+                <h2 class="section-title">Тануки</h2>
+                <div class="card-info">
+                    <div class="rating"><img src="image/star.svg" alt="Star" class="rating-star"> 4.5</div>
+                    <div class="price">от 1500 ₽</div>
+                    <div class="category">Тануки</div>
+                </div>
+            </div>
+        </section>
+        <section class="cards cards-menu">
+            
+        </section>
+    </div>
     <footer class="footer">
         <div class="container">
             <div class="footer-block">
@@ -176,7 +112,8 @@
 			<!-- /.modal-footer -->
 		</div>
 		<!-- /.modal-dialog -->
-	</div>
+    </div>
+    
 
     <script src="js/main.js" async></script>
 </body>
