@@ -84,7 +84,7 @@ input{
     margin-right: 10px;
     color: #FFFFFF;
 }
-.button-cart{
+#open-card{
     display: none;
     margin: 0 5px;
 }
@@ -537,10 +537,10 @@ input{
     }
     .button-out-svg {
         width: 24px;
-        height: 24px;
+        height: 16px;
         background-color: #fff;
-        -webkit-mask: url(../img/icon/logout.svg) no-repeat 50% 50%;
-        mask: url(../img/icon/logout.svg) no-repeat 50% 50%;
+        -webkit-mask: url(../image/logout.svg) no-repeat 50% 50%;
+        mask: url(../image/logout.svg) no-repeat 50% 50%;
         background-repeat: no-repeat;
         -webkit-mask-size: 20px;
         mask-size: 20px;
